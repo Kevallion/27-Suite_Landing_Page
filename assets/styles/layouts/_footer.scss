@@ -1,0 +1,34 @@
+footer .container{
+    max-width: 125px;
+    margin: 56px auto 80px;
+    text-align: center;
+
+    @media screen and (min-width:700px) {
+        max-width: 689px;
+        display: flex;  
+        align-items: center;
+    }
+
+    @media screen and (min-width:1024px) {
+        max-width: 1110px;
+        margin:95px auto 72px;
+    }
+    p{
+        margin: 33px auto;
+    }
+
+    ul{
+       display: flex; 
+       justify-content: space-between;
+       @media screen and (min-width:700px) {
+       min-width: 116px;
+       
+    }
+       li{
+        cursor: pointer;
+        &:hover{
+            opacity: 0.33;
+        }
+       }
+    }
+}

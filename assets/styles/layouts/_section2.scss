@@ -1,0 +1,71 @@
+.section-2{
+    background-color: $color1;
+    border-radius: 20px;
+    @media screen and (min-width:1024px) {
+        max-width: 1110px;
+        max-height: 545px;
+        margin: 0 auto;
+    }
+    .container{
+        text-align: center;
+        padding-bottom: 64px;
+        color: white;
+        @media screen and (min-width:1024px) {
+            display: flex;
+            padding: 0 122px;
+            min-height: 545px;
+            max-height: 545px;
+            position: relative;
+        }
+
+        
+        img{
+            margin: -181px auto 117px;
+            @media screen and (min-width:1024px) {
+                position: absolute;
+                bottom:0;
+                margin: 0;
+                width: 359.81px;
+                height: 589.56px;
+            }
+        }
+
+        .text-content{
+            position: relative;
+            width: 100%;
+            
+            @media screen and (min-width:1024px) {
+                max-width: 350px;
+                position: absolute;
+                right: 122px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../img/pattern-curved-line-2.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 49.27px;
+                height: 40px;
+                top: -70px;
+                left: 50%;
+                transform: translateX(-50%);
+                @media screen and (min-width:1024px) {
+                  left: -73px;
+                  top: 60px;
+                }
+            }
+
+            p{
+                margin:  40px auto;
+                @media screen and (min-width:700px) {
+                  max-width: 573px;  
+                }
+            }
+        }
+    }
+}
